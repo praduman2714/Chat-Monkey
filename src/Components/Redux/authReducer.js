@@ -9,7 +9,6 @@ import { auth } from "../../firebase";
 export const signIn = createAsyncThunk(
   'auth/signIn',
   async ({ email, password }, { rejectWithValue }) => {
-    // console.log(email + " " + password);
     try {
       const userCredential = await signInWithEmailAndPassword(
         auth,
@@ -18,7 +17,6 @@ export const signIn = createAsyncThunk(
       );
 
       const user = userCredential.user;
-      setUser(user);
       return user;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -58,6 +56,7 @@ const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
+    // setUser, setLoading, setError, clearError
     setUser: (state, action) => {
       state.user = action.payload;
     },

@@ -1,7 +1,7 @@
 // Reducer.js
 import { createSlice } from "@reduxjs/toolkit";
 
-const INITIAL_STATE = { isLogin: false };
+const INITIAL_STATE = { isLogin: false , chatWindow : false , activeUser : null };
 
 export const chatReducer = createSlice({
   name: "chatReducer",
@@ -11,10 +11,14 @@ export const chatReducer = createSlice({
     LogIN: (state, action) => {
       state.isLogin = action.payload;
     },
+    ChatWindow : (state, action) =>{
+      state.chatWindow = action.payload;
+      state.activeUser = action.payload;
+    }
   },
 });
 
-export const { LogIN } = chatReducer.actions; // Export LogIN action
+export const { LogIN , ChatWindow } = chatReducer.actions; // Export LogIN action
 
 // Exporting selector
 export const chatSelector = (state) => state.chatReducer;

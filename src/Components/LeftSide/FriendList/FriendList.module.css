@@ -1,0 +1,42 @@
+.friendList {
+    width: 100%;
+  }
+  
+  .friendItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .friendItem:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .profilePicture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .friendInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .friendName {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  .lastMessage {
+    color: #888888;
+    font-size: 14px;
+  }
+  

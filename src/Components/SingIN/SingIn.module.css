@@ -1,0 +1,46 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20vh;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  Link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
